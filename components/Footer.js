@@ -14,7 +14,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className='short-desc'>
-                  Subscribe to our newsleter, Enter your emil address
+                  Subscribe to our newsleter, Enter your email address
                 </p>
                 <div className='newsletter-form_wrap'>
                   <form

@@ -20,7 +20,7 @@ const Header = () => {
                   <nav className='main-nav d-flex justify-content-center'>
                     <ul>
                       <li className='dropdown-holder'>
-                        <a href='javascript:void(0)'>
+                        <a href='/'>
                           Home <i className='ion-chevron-down'></i>
                         </a>
                         <ul className='kenne-dropdown'>
