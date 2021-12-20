@@ -5,6 +5,8 @@ import NewProduct from '../components/Home/NewProduct';
 import AllProduct from '../components/Home/AllProduct';
 import ServiceArea from '../components/Home/ServiceArea';
 import Slider from '../components/Home/Slider';
+import SingleBanner from '../components/Home/SingleBanner';
+import Instagram from '../components/Home/Instagram';
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <NewProduct />
       <BigBanner />
       <AllProduct />
+      <SingleBanner />
+      <Instagram />
     </div>
   );
 };
