@@ -6,7 +6,7 @@ const Breadcrumb = () => {
  const router=useRouter()
 
  return (
-  <div className="breadcrumb-area ">
+  <div className="breadcrumb-area mb-5">
     <div className="container">
         <div className="breadcrumb-content">
             <h2 >Other</h2>

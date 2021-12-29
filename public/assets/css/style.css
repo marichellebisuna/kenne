@@ -9211,6 +9211,7 @@ i, .tab-content .tab-pane.active, .scroll-to-top i, .quantity .cart-plus-minus >
 
 .cart-page-total {
   padding-top: 30px;
+ 
 }
 
 .cart-page-total > h2 {
@@ -9237,7 +9238,7 @@ i, .tab-content .tab-pane.active, .scroll-to-top i, .quantity .cart-plus-minus >
 }
 
 .cart-page-total > ul li span {
-  float: right;
+  float: right !important;
 }
 
 .cart-page-total a {
