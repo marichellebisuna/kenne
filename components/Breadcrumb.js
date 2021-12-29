@@ -9,7 +9,7 @@ const Breadcrumb = () => {
   <div className="breadcrumb-area mb-5">
     <div className="container">
         <div className="breadcrumb-content">
-            <h2 >Other</h2>
+            <h2 >{router.pathname.slice(1, 10)}</h2>
             <ul>
                 <li>
                     <Link href='/'>
