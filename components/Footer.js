@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
             <div className='col-lg-5'>
               <div className='newsletter-area'>
                 <div className='newsletter-logo'>
-                  <a href='javascript:void(0)'>
-                    <img src='assets/images/footer/logo/1.png' alt='Logo' />
-                  </a>
+                <Link href='/'><a>
+                    <img src='assets/images/menu/logo/1.png' alt='Logo' />
+                  </a></Link>
                 </div>
                 <p className='short-desc'>
                   Subscribe to our newsleter, Enter your email address
@@ -53,16 +54,16 @@ const Footer = () => {
                   <div className='footer-widgets'>
                     <ul>
                       <li>
-                        <a href='javascript:void(0)'>Product</a>
+                      <Link href='/products'><a>Products</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>My Cart</a>
+                      <Link href='/cart'><a >My Cart</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>Wishlist</a>
+                      <Link href='/wishlist'><a>Wishlist</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>Cart</a>
+                      <Link href='/cart'><a>Cart</a></Link>
                       </li>
                     </ul>
                   </div>
@@ -74,16 +75,16 @@ const Footer = () => {
                   <div className='footer-widgets'>
                     <ul>
                       <li>
-                        <a href='javascript:void(0)'>Login</a>
+                      <Link href='/login'><a>Login</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>Register</a>
+                      <Link href='/register'><a>Register</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>Help</a>
+                      <Link href='/'><a>Help</a></Link>
                       </li>
                       <li>
-                        <a href='javascript:void(0)'>Support</a>
+                      <Link href='/'><a>Support</a></Link>
                       </li>
                     </ul>
                   </div>
@@ -95,16 +96,13 @@ const Footer = () => {
                   <div className='footer-widgets'>
                     <ul>
                       <li>
-                        <a href='javascript:void(0)'>Men</a>
+                      <Link href='/products'><a>Men</a></Link>
                       </li>
-                      <li>
-                        <a href='javascript:void(0)'>Women</a>
+                      <li> <Link href='/products'><a>Women</a></Link>
                       </li>
-                      <li>
-                        <a href='javascript:void(0)'>Jeans</a>
+                      <li> <Link href='/products'><a>Jeans</a></Link>
                       </li>
-                      <li>
-                        <a href='javascript:void(0)'>Shoes</a>
+                      <li> <Link href='/products'><a>Shoes</a></Link>
                       </li>
                     </ul>
                   </div>
@@ -120,7 +118,7 @@ const Footer = () => {
             <div className='col-md-6'>
               <div className='copyright'>
                 <span>
-                  Copyright &copy; 2019 <a href='javascript:void(0)'>Kenne.</a>{' '}
+                  Copyright &copy; {(new Date().getFullYear())} <a >Kenne.</a>{' '}
                   All rights reserved.
                 </span>
               </div>
@@ -128,7 +126,7 @@ const Footer = () => {
             <div className='col-md-6'>
               <div className='payment'>
                 <img
-                  src='assets/images/footer/payment/1.png'
+                  src='https://demo.hasthemes.com/kenne-preview/kenne/assets/images/footer/payment/1.png'
                   alt="Kenne's Payment Method"
                 />
               </div>

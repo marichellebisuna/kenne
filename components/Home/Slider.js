@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Slider = () => {
   return (
@@ -40,9 +41,9 @@ const Slider = () => {
                 dolorum.
               </p>
               <div className='slide-btn'>
-                <a className='kenne-btn' href='shop-left-sidebar.html'>
+              <Link href='/products'><a className='kenne-btn' >
                   shop now
-                </a>
+                </a></Link>
               </div>
             </div>
           </div>
@@ -59,9 +60,9 @@ const Slider = () => {
                 Made from Soft, Durable, US-grown Supima cotton.
               </p>
               <div className='slide-btn'>
-                <a className='kenne-btn' href='shop-left-sidebar.html'>
+              <Link href='/products'><a className='kenne-btn' >
                   shop now
-                </a>
+                </a></Link>
               </div>
             </div>
           </div>

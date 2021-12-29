@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+
 class MyDocument extends Document {
   render() {
     return (
@@ -30,6 +31,7 @@ class MyDocument extends Document {
           <link rel='stylesheet' href='assets/css/ion-fonts.css' />
           {/* <!-- Slick CSS --> */}
           <link rel='stylesheet' href='assets/css/slick.css' />
+          <link rel='stylesheet' href='assets/css/slick-theme.css' />
           {/* <!-- Animation --> */}
           <link rel='stylesheet' href='assets/css/animate.min.css' />
           {/* <!-- jQuery Ui --> */}
@@ -73,13 +75,16 @@ class MyDocument extends Document {
           <script src='assets/js/plugins/timecircles.js'></script>
 
           {/* <!-- Main JS --> */}
-          <script src='assets/js/main.js'></script>
+          {/* <script src='assets/js/main.js'></script> */}
         </Head>
-
-        <body>
-          <Main />
-          <NextScript />
+     
+        <body className="template-color-1">
+          <div className="main-wrapper">
+            <Main />
+            <NextScript />
+          </div>
         </body>
+       
       </Html>
     );
   }

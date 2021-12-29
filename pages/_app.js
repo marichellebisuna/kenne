@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 import '../styles/globals.css';
+import '../public/slick-carousel/slick/slick.css';
+import '../public/slick-carousel/slick/slick-theme.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,8 +15,10 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Layout>
-        <Component {...pageProps} />
+       <Component {...pageProps} />
       </Layout>
+       
+     
     </>
   );
 }

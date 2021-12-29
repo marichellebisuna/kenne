@@ -1,11 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 
 const ProductCard = () => {
   return (
     <div className='product-item'>
       <div className='single-product'>
         <div className='product-img'>
-          <a href='single-product.html'>
+         <Link href='/products/:id'>
+                  <a>
             <img
               className='primary-img'
               src='assets/images/product/1-1.jpg'
@@ -17,6 +19,7 @@ const ProductCard = () => {
               alt="Kenne's Product Image"
             />
           </a>
+          </Link>
           <span className='sticker-2'>Hot</span>
           <div className='add-actions'>
             <ul>
@@ -35,6 +38,8 @@ const ProductCard = () => {
                 </a>
               </li>
               <li>
+              <Link href='/wishlist'>
+                  
                 <a
                   href='wishlist.html'
                   data-bs-toggle='tooltip'
@@ -43,6 +48,7 @@ const ProductCard = () => {
                 >
                   <i className='ion-ios-heart-outline'></i>
                 </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -55,14 +61,16 @@ const ProductCard = () => {
                 </a>
               </li>
               <li>
+              <Link href='/cart'>
+               
                 <a
-                  href='cart.html'
+                 
                   data-bs-toggle='tooltip'
                   data-placement='right'
                   title='Add To cart'
                 >
                   <i className='ion-bag'></i>
-                </a>
+                </a></Link>
               </li>
             </ul>
           </div>
@@ -70,7 +78,9 @@ const ProductCard = () => {
         <div className='product-content'>
           <div className='product-desc_info'>
             <h3 className='product-name'>
-              <a href='single-product.html'>Quibusdam ratione</a>
+            <Link href='/products/:id'>
+                  <a>
+              Quibusdam ratione</a></Link>
             </h3>
             <div className='price-box'>
               <span className='new-price'>$46.91</span>

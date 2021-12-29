@@ -59,25 +59,25 @@
 .arrow-style-2,
 .arrow-style-3{
 	.tty-slick-text-btn{
-		background-color: rgba(0, 0, 0, 0.5);
-		color: $white-color;
-		border-radius: 0;
+		background-color: rgba(0, 0, 0, 0.5) !important;
+		color: $white-color !important;
+		border-radius: 0 !important;
 		&.tty-slick-text-prev{
-			right: auto;
-			left: 15px;
+			right: auto !important;
+			left: 15px !important;
 		}
 		&.tty-slick-text-next{
-			left: auto;
-			right: 15px;
-			margin-bottom: 0;
-			transform: translateY(50%);
+			left: auto !important;
+			right: 15px !important;
+			margin-bottom: 0 !important;
+			transform: translateY(50%) !important;
 		}
 	}
 	&.arrow-style-3{
 		.tty-slick-text-btn{
-			width: 30px;
-			height: 30px;
-			line-height: 30px;
+			width: 30px !important;
+			height: 30px !important;
+			line-height: 30px !important;
 		}
 	}
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const SingleBanner = () => {
   return (
@@ -14,12 +15,9 @@ const SingleBanner = () => {
           <a href='callto://+123123321345'>(+123) 123 321 345</a>
         </div>
         <div className='kenne-btn-ps_center'>
-          <a
-            className='kenne-btn transparent-btn'
-            href='shop-left-sidebar.html'
-          >
-            Shop Now
-          </a>
+          <Link href='/products'><a className='kenne-btn transparent-btn'>           
+                      Shop Now
+          </a></Link>
         </div>
       </div>
     </div>

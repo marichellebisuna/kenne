@@ -1,9 +1,10 @@
 import React from 'react';
 import ProductTab from '../ProductTab';
 
+
 const AllProduct = () => {
   return (
-    <div className='product-area '>
+    <div className='product-tab_area'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>

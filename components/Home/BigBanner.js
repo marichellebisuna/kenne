@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 const BigBanner = () => {
   return (
@@ -8,26 +9,26 @@ const BigBanner = () => {
           <div className='col-md-6'>
             <div className='banner-item img-hover_effect'>
               <div className='banner-img'>
-                <a href='javascrip:void(0)'>
+              <Link href='/products/:id'><a>
                   <img
                     className='img-full'
                     src='https://demo.hasthemes.com/kenne-preview/kenne/assets/images/banner/1-4.jpg'
                     alt='Banner'
                   />
-                </a>
+                </a></Link>
               </div>
             </div>
           </div>
           <div className='col-md-6'>
             <div className='banner-item img-hover_effect'>
               <div className='banner-img'>
-                <a href='javascrip:void(0)'>
+              <Link href='/products/:id'><a>
                   <img
                     className='img-full'
                     src='https://demo.hasthemes.com/kenne-preview/kenne/assets/images/banner/1-5.jpg'
                     alt='Banner'
                   />
-                </a>
+                </a></Link>
               </div>
             </div>
           </div>
