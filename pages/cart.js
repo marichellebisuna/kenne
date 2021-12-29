@@ -1,6 +1,7 @@
 import React from 'react'
 import BreadCrumb from '../components/Breadcrumb'
 import Brands from '../components/Brands'
+import Link from 'next/link'
 
 const cart = () => {
  return (
@@ -25,10 +26,17 @@ const cart = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="kenne-product-remove"><a href=""><i className="fa fa-trash"
-                                                title="Remove"></i></a></td>
-                                            <td className="kenne-product-thumbnail"><a href=""><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/1.jpg" alt="Uren's Cart Thumbnail"/></a></td>
-                                            <td className="kenne-product-name"><a href="">Juma rema pola</a></td>
+                                            <td className="kenne-product-remove">
+                                             <Link href='/'>
+                                             <a><i className="fa fa-trash"
+                                                title="Remove"></i></a></Link>
+                                                </td>
+                                            <td className="kenne-product-thumbnail"> <Link href='/products/:id'><a ><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/1.jpg" alt="Uren's Cart Thumbnail"/></a>
+                                            </Link>
+                                            </td>
+                                            <td className="kenne-product-name"> <Link href='/products/:id'><a >Juma rema pola</a>
+                                            </Link>
+                                            </td>
                                             <td className="kenne-product-price"><span className="amount">$46.80</span></td>
                                             <td className="quantity">
                                                 <label>Quantity</label>
@@ -41,10 +49,14 @@ const cart = () => {
                                             <td className="product-subtotal"><span className="amount">$46.80</span></td>
                                         </tr>
                                         <tr>
-                                            <td className="kenne-product-remove"><a href=""><i className="fa fa-trash"
-                                                title="Remove"></i></a></td>
-                                            <td className="kenne-product-thumbnail"><a href=""><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/2.jpg" alt="Uren's Cart Thumbnail"/></a></td>
-                                            <td className="kenne-product-name"><a href="">Bag Goodscol model</a>
+                                            <td className="kenne-product-remove"> <Link href=''><a ><i className="fa fa-trash"
+                                                title="Remove"></i></a></Link>
+                                                
+                                                </td>
+                                            <td className="kenne-product-thumbnail"> <Link href=''><a ><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/2.jpg" alt="Uren's Cart Thumbnail"/></a>
+                                            </Link>
+                                            </td>
+                                            <td className="kenne-product-name"> <Link href=''><a >Bag Goodscol model</a></Link>
                                             </td>
                                             <td className="kenne-product-price"><span className="amount">$71.80</span></td>
                                             <td className="quantity">
@@ -85,7 +97,10 @@ const cart = () => {
                                         <li>Subtotal <span>$118.60</span></li>
                                         <li>Total <span>$118.60</span></li>
                                     </ul>
-                                    <a href="">Proceed to checkout</a>
+                                    <Link href="/checkout">
+                                    <a >Proceed to checkout</a>
+</Link>
+
                                 </div>
                             </div>
                         
