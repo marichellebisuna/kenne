@@ -1,5 +1,6 @@
 import React from 'react'
 import Breadcrumb from '../components/Breadcrumb'
+import Link from 'next/link';
 
 const Error = () => {
  return (
@@ -21,7 +22,8 @@ const Error = () => {
                                         <i className="fa fa-search"></i>
                                     </button>
                                 </form>
-                                <a href="index.html" className="btn">Back to home page</a>
+                                <Link href="/">
+                                <a  className="btn">Back to home page</a></Link>
                             </div>
                         </div>
                     </div>
