@@ -3,7 +3,9 @@ import Breadcrumb from '../components/Breadcrumb'
 import Link from 'next/link'
 import Brands from '../components/Brands'
 
+
 const wishlist = () => {
+  
  return (
   <div>
     <Breadcrumb/>
@@ -26,36 +28,46 @@ const wishlist = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="kenne-product_remove"><a href="javascript:void(0)"><i className="fa fa-trash"
-                                                title="Remove"></i></a></td>
-                                            <td className="kenne-product-thumbnail"><a href="javascript:void(0)"><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/1.jpg" alt="Kenne's Wishlist Thumbnail"/></a>
+                                            <td className="kenne-product_remove">
+                                            <Link href="/products/product">
+                                             <a ><i className="fa fa-trash"
+                                                title="Remove"></i></a>
+                                                </Link>
+                                                </td>
+                                            <td className="kenne-product-thumbnail">
+                                            <Link href="/products/product">
+                                             <a ><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/1.jpg" alt="Kenne's Wishlist Thumbnail"/></a></Link>
                                             </td>
-                                            <td className="kenne-product-name"><a href="javascript:void(0)">Juma rema pola</a></td>
+                                            <td className="kenne-product-name">
+                                            <Link href="/products/product">
+                                             <a >Juma rema pola</a></Link></td>
                                             <td className="kenne-product-price"><span className="amount">£23.39</span></td>
                                             <td className="kenne-product-stock-status"><span className="in-stock">in stock</span></td>
-                                            <td className="kenne-cart_btn"><a href="javascript:void(0)">add to cart</a></td>
+                                            <td className="kenne-cart_btn">     <Link href="/products/product"><a >add to cart</a></Link></td>
                                         </tr>
                                         <tr>
-                                            <td className="kenne-product_remove"><a href="javascript:void(0)"><i className="fa fa-trash"
-                                                title="Remove"></i></a></td>
-                                            <td className="kenne-product-thumbnail"><a href="javascript:void(0)"><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/2.jpg"/></a>
+                                            <td className="kenne-product_remove">
+                                            <Link href="/products/product">
+                                             <a ><i className="fa fa-trash"
+                                                title="Remove"></i></a></Link></td>
+                                            <td className="kenne-product-thumbnail"> <Link href="/products/product"><a ><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/2.jpg"/></a></Link>
                                             </td>
-                                            <td className="kenne-product-name"><a href="javascript:void(0)">Suretin mipen ruma</a>
+                                            <td className="kenne-product-name"> <Link href="/products/product"><a >Suretin mipen ruma</a></Link>
                                             </td>
                                             <td className="kenne-product-price"><span className="amount">£30.50</span></td>
                                             <td className="kenne-product-stock-status"><span className="in-stock">in stock</span></td>
-                                            <td className="kenne-cart_btn"><a href="javascript:void(0)">add to cart</a></td>
+                                            <td className="kenne-cart_btn"> <Link href="/products/product"><a >add to cart</a></Link></td>
                                         </tr>
                                         <tr>
-                                            <td className="kenne-product_remove"><a href="javascript:void(0)"><i className="fa fa-trash"
-                                                title="Remove"></i></a></td>
-                                            <td className="kenne-product-thumbnail"><a href="javascript:void(0)"><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/3.jpg" alt="Kenne's Wishlist Thumbnail"/></a>
+                                            <td className="kenne-product_remove"> <Link href="/products/product"><a ><i className="fa fa-trash"
+                                                title="Remove"></i></a></Link></td>
+                                            <td className="kenne-product-thumbnail"> <Link href="/products/product"><a ><img src="https://demo.hasthemes.com/kenne-preview/kenne/assets/images/product/small-size/3.jpg" alt="Kenne's Wishlist Thumbnail"/></a></Link>
                                             </td>
-                                            <td className="kenne-product-name"><a href="javascript:void(0)">Bag Goodscol model</a>
+                                            <td className="kenne-product-name"> <Link href="/products/product"><a >Bag Goodscol model</a></Link>
                                             </td>
                                             <td className="kenne-product-price"><span className="amount">£40.19</span></td>
                                             <td className="kenne-product-stock-status"><span className="out-stock">out stock</span></td>
-                                            <td className="kenne-cart_btn"><a href="javascript:void(0)">add to cart</a></td>
+                                            <td className="kenne-cart_btn"> <Link href="/products/product"><a>add to cart</a></Link></td>
                                         </tr>
                                     </tbody>
                                 </table>
